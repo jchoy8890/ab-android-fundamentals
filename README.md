@@ -19,7 +19,7 @@ Lesson 6
 
 ## RecyclerView
 
-<img src="https://developer.android.com/training/material/images/RecyclerView.png?hl=es-419" height="320" />
+<img src="https://developer.android.com/training/material/images/RecyclerView.png" height="320" />
 
 ## Events
 
