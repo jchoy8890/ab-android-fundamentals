@@ -13,13 +13,13 @@ Lesson 6
 
 ## Adapters
 
-<img src="https://camo.githubusercontent.com/fc6df9d5fd6d78e48d6802c77ad7264a6a787672/68747470733a2f2f692e696d6775722e636f6d2f6d6b38324a64322e6a7067" height="320" />
+<img src="https://camo.githubusercontent.com/fc6df9d5fd6d78e48d6802c77ad7264a6a787672/68747470733a2f2f692e696d6775722e636f6d2f6d6b38324a64322e6a7067" />
 
 ## Custom Adapters
 
 ## RecyclerView
 
-<img src="https://developer.android.com/training/material/images/RecyclerView.png" height="320" />
+<img src="https://developer.android.com/training/material/images/RecyclerView.png" />
 
 ## Events
 
