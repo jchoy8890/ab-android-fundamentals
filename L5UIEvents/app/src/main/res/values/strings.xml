@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">L5UIEvents</string>
+    <string name="ejemplo">This is an example</string>
+    <string name="or">or</string>
+    <string name="emailHint">name@example.com</string>
+    <string name="passwordHint">Password</string>
+    <string name="signInButtonLabel">Sign In</string>
+    <string name="ForgotPasswordLabel">Forgot Password?</string>
+
+
 </resources>
