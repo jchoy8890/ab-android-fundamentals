@@ -1,71 +1,49 @@
 # ab-android-fundamentals
 Android Bootcamp - Android Fundamentals
 
-### User Events
+Lesson 6 
 
-  - Widgets
-  - User Events
+## RecyclerView & Adapters
 
-## UI components
+  - Adapters
+  - Custom Adapters
+  - RecyclerView
+  - Events
+  - Exercises
 
-- Buttons
-- Checkboxes
-- Radio buttons
-- Campos de textos y labels
-- Spinners
-- Pickers
+## Adapters
 
-## Eventos
+<img src="https://camo.githubusercontent.com/fc6df9d5fd6d78e48d6802c77ad7264a6a787672/68747470733a2f2f692e696d6775722e636f6d2f6d6b38324a64322e6a7067" height="320" />
 
-```java
- btnSignUp =(Button)findViewById(R.id.btnSignUp);
- 
- ...
- 
-   btnSignUp.setOnClickListener(new OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            //action
-        }
-  });
-```
+## Custom Adapters
+
+## RecyclerView
+
+<img src="https://developer.android.com/training/material/images/RecyclerView.png?hl=es-419" height="320" />
+
+## Events
+
+## Exercises
 
 ```java
-  rbGenero.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-              @Override
-              public void onCheckedChanged(RadioGroup radioGroup, int checkedId) {
-                  switch (checkedId) {
-                      case R.id.rbM:
-                          genero = 1;
-                          break;
-                      case R.id.rbF:
-                          genero = 2;
-                          break;
-                  }
-              }
-  });
-```
-
-```java
-
-  spLocation.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-              @Override
-              public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                  Log.v("CONSOLE", "spLocation" + adapterView.getAdapter().getItem(i));
-                  localidad = adapterView.getAdapter().getItem(i).toString();
-              }
-
-              @Override
-              public void onNothingSelected(AdapterView<?> adapterView) {
-
-              }
-          });
-  }
 ```
 
 ## Referencias 
 
-User Events https://developer.android.com/guide/topics/ui/ui-events.html
 
-Controles de entrada https://developer.android.com/guide/topics/ui/controls.html
+Adapter https://developer.android.com/reference/android/widget/Adapter.html
+
+ListView https://developer.android.com/guide/topics/ui/layout/listview.html
+
+GridView https://developer.android.com/guide/topics/ui/layout/gridview.html
+
+RecyclerView https://developer.android.com/guide/topics/ui/layout/recyclerview.html
+
+Creating List and Cards https://developer.android.com/training/material/lists-cards.html
+
+RecyclerView https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html
+
+Android Developers Fundamentals Course - Create a RecyclerView https://google-developer-training.gitbooks.io/android-developer-fundamentals-course-practicals/content/en/Unit%202/44_p_create_a_recycler_view.html
+
+
 
