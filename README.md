@@ -237,6 +237,19 @@ public class SimpleListAdapter extends BaseAdapter {
     }
 }
 ```
+5. Asociar nuestro adapter con el componente visual
+
+```java
+ private String[] mDays = {"Monday", "Tuesday","Wednesday","Thursday","Friday",
+"Saturday", "Sunday"};
+  ...
+  
+  listViewSimple= findViewById(R.id.listViewSimple);
+
+  SimpleListAdapter mySimpleListAdapter= new SimpleListAdapter(this,
+          mDays);
+  lviSimple.setAdapter(mySimpleListAdapter);
+```
 
 ## RecyclerView
 
@@ -277,8 +290,12 @@ Si es un recyclerView , no contamos con un listener por defecto , pero agregué 
 
 ## Exercises
 
-```java
-```
+<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-I.png?raw=true" height="320"/> 
+<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-II.png?raw=true" height="320"/>
+
+<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-III.png?raw=true" height="320"/> 
+<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-IV.png?raw=true" height="320"/>
+
 
 ## Referencias 
 
