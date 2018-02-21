@@ -1,11 +1,22 @@
 package com.androidbootcamp.androidtemplate;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
+
+import com.androidbootcamp.androidtemplate.adapter.MovieListAdapter;
+import com.androidbootcamp.androidtemplate.data.Movies;
+import com.androidbootcamp.androidtemplate.model.Movie;
+
+import java.util.List;
 
 public class MovieListActivity extends BaseActivity {
 
     private ListView listViewMovies;
+    private List<Movie> movies;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -13,5 +24,29 @@ public class MovieListActivity extends BaseActivity {
         enabledBack();
 
         listViewMovies= findViewById(R.id.listViewMovies);
+
+        //data provider
+        movies= Movies.getMovies();
+
+        //Adapter
+        MovieListAdapter adapter= new MovieListAdapter(this,movies);
+
+        //set Adapter to UI
+        listViewMovies.setAdapter(adapter);
+
+        //events
+        listViewMovies.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                Movie movie =(Movie) adapterView.getAdapter().getItem(position);
+                String message= movie.getTitle()+ " "+ movie.isCartelera();
+                //String.format("title %s cartela %s ",movie.getTitle(),String.valueOf(movie.isCartelera()) );
+                showItem(message);
+            }
+        });
+    }
+
+    private void showItem(String value) {
+        Toast.makeText(this,"item "+value,Toast.LENGTH_SHORT).show();
     }
 }

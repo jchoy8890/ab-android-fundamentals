@@ -26,7 +26,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private TextView textView1,textView2,textView3,textView4;
+    private TextView textView1,textView2,textView3,textView4,textView5,textView6,textView7,textView8,
+            textView9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +38,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         textView2= findViewById(R.id.textView2);
         textView3= findViewById(R.id.textView3);
         textView4= findViewById(R.id.textView4);
+        textView5= findViewById(R.id.textView5);
+        textView6= findViewById(R.id.textView6);
+        textView7= findViewById(R.id.textView7);
+        textView8= findViewById(R.id.textView8);
+        textView9= findViewById(R.id.textView9);
 
         //events
         textView1.setOnClickListener(this);
         textView2.setOnClickListener(this);
         textView3.setOnClickListener(this);
         textView4.setOnClickListener(this);
+        textView5.setOnClickListener(this);
+        textView6.setOnClickListener(this);
+        textView7.setOnClickListener(this);
+        textView8.setOnClickListener(this);
+        textView9.setOnClickListener(this);
     }
 
     @Override
@@ -59,6 +70,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.textView4:
                 goToMovieGrid();
+                break;
+            case R.id.textView5:
+                goToPokemonList();
+                break;
+            case R.id.textView6:
+                goToPokemonAnimationList();
+                break;
+            case R.id.textView7:
+                goToDynamicContent();
+                break;
+            case R.id.textView8:
+                goToRecipes();
+                break;
+            case R.id.textView9:
+                goToMultiple();
                 break;
         }
     }
@@ -77,6 +103,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void goToMovieGrid() {
         startActivity(new Intent(this,MovieGridActivity.class));
+    }
+
+    private void goToPokemonList() {
+        startActivity(new Intent(this,PokemonListActivity.class));
+    }
+
+    private void goToPokemonAnimationList() {
+        startActivity(new Intent(this,PokemonAnimationListActivity.class));
+    }
+
+    private void goToDynamicContent() {
+        startActivity(new Intent(this,DynamicContentActivity.class));
+    }
+    private void goToRecipes() {
+        startActivity(new Intent(this,RecipeListActivity.class));
+    }
+
+    private void goToMultiple() {
+        startActivity(new Intent(this,RecyclerMultipleActivity.class));
     }
 
     private void showMessage(String message){
