@@ -26,7 +26,7 @@ y a los componentes visuales, tenemos :
 - GridView
 - RecyclerView
 
-Los Adapters son los que asocian la colección de datos de las celdas de nuestras vistas , tambien te permiten realizar cambios sobre ellas. Es decir, agregar, modificar o eliminar un elemento de nuestra lista .
+Los Adapters son los que asocian la colección de datos con las  celdas de nuestras vistas , tambien te permiten realizar cambios sobre ellas. Es decir, agregar, modificar o eliminar un elemento de nuestra lista .
 
 ListView & GridView 
 < img src="https://developer.android.com/images/ui/listview.png" /> <img src="https://developer.android.com/images/ui/gridview.png" />
