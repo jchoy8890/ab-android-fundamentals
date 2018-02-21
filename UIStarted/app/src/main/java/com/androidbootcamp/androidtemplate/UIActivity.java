@@ -15,6 +15,6 @@ public class UIActivity extends AppCompatActivity {
         //RelativeLayout
         //setContentView(R.layout.layout_relative);
 
-        setContentView(R.layout.layout_vine_sign_in);
+        setContentView(R.layout.layout_login_tumblr);
     }
 }
