@@ -290,12 +290,17 @@ Si es un recyclerView , no contamos con un listener por defecto , pero agregué 
 
 ## Exercises
 
-<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-I.png?raw=true" height="320"/> 
-<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-II.png?raw=true" height="320"/>
+<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-I.png?raw=true" height="320"/> <img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-II.png?raw=true" height="320"/>
 
-<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-III.png?raw=true" height="320"/> 
-<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-IV.png?raw=true" height="320"/>
+<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-III.png?raw=true" height="320"/> <img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-IV.png?raw=true" height="320"/>
 
+<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-V.png?raw=true" height="320"/>
+
+<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/Adapters-I.png?raw=true" height="320"/> <img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/Adapters-II.png?raw=true" height="320"/>
+
+<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/Adapters-III.png?raw=true" height="320"/> <img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/Adapters-IV.png?raw=true" height="320"/>
+
+<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/Adapters-V.png?raw=true" height="320"/>
 
 ## Referencias 
 
