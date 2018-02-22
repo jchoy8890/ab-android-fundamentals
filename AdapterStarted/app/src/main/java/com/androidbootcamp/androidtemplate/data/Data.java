@@ -24,7 +24,7 @@ public class Data {
             "BATMAN", "TIBURÓN","HARRY POTTER", "DR. STRANGE","UNA PAREJA DISPAREJA","ROBERT EL MUNECO POSEIDO",
             "ENEMIGO EN LA RED","PRESENCIA DIABOLICA","BATMAN", "TIBURÓN","HARRY POTTER",
             "DR. STRANGE","UNA PAREJA DISPAREJA","ROBERT EL MUNECO POSEIDO",
-            "MANOS DE PIEDRA","LA REINA DE KATWE"};
+            "MANOS DE PIEDRA","LA REINA DE KATWE", "The Avengers"};
 
     public static final String[] cheeses = {
             "Abbaye de Belloc", "Abbaye du Mont des Cats", "Abertam", "Abondance", "Ackawi",

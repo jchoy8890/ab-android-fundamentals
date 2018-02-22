@@ -3,11 +3,11 @@ package com.androidbootcamp.androidtemplate;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.androidbootcamp.androidtemplate.data.Data;
+import com.androidbootcamp.androidtemplate.adapter.SimpleListAdapter;
+
 
 /*
        1. Data Provider : List, ArrayList, Array
@@ -37,8 +37,10 @@ public class SimpleListActivity extends BaseActivity {
 
         listViewSimple= findViewById(R.id.listViewSimple);
 
-        /*lviSimple.setAdapter(new ArrayAdapter<String>(this,
-            R.layout.row_simple_list, mDays));*/
+        /*ArrayAdapter<String> myAdapter= new ArrayAdapter<String>(this,
+                R.layout.row_simple_list, mDays);
+
+        listViewSimple.setAdapter(myAdapter);*/
 
         /*lviSimple.setAdapter(new ArrayAdapter<String>(this,
                 R.layout.row_simple_list, mMonths));*/
@@ -46,20 +48,20 @@ public class SimpleListActivity extends BaseActivity {
         /*listViewSimple.setAdapter(new ArrayAdapter<String>(this,
                 R.layout.row_simple_list, Data.movies));*/
 
-        /*
+
         SimpleListAdapter mySimpleListAdapter= new SimpleListAdapter(this,
-                mDays);
-        lviSimple.setAdapter(mySimpleListAdapter);*/
+                mMonths);
+        listViewSimple.setAdapter(mySimpleListAdapter);
 
         //events
-        /*listViewSimple.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listViewSimple.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 String value= String.valueOf(position)+" "+
                         String.valueOf(adapterView.getAdapter().getItem(position));
                 showItem(value);
             }
-        });*/
+        });
     }
 
     private void showItem(String value) {

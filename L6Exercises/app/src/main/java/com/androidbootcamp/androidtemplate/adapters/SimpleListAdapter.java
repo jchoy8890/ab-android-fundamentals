@@ -1,4 +1,4 @@
-package com.androidbootcamp.androidtemplate.adapter;
+package com.androidbootcamp.androidtemplate.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -15,7 +15,7 @@ import com.androidbootcamp.androidtemplate.R;
  */
 public class SimpleListAdapter extends BaseAdapter {
 
-    private final Context context;
+    private Context context;
     private String[] data;
 
     public SimpleListAdapter(Context context, String[] data) {
@@ -42,11 +42,11 @@ public class SimpleListAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         View view;
         if (convertView == null) {
-            view = LayoutInflater.from(this.context).inflate(R.layout.row_list,parent,false);
+            view = LayoutInflater.from(this.context).inflate(R.layout.row_basic_01,parent,false);
         } else {
             view = convertView;
         }
-        TextView  tviTitle=view.findViewById(R.id.tviTitle);
+        TextView  tviTitle=view.findViewById(R.id.textViewItem);
         tviTitle.setText(data[position]);
         return view;
     }

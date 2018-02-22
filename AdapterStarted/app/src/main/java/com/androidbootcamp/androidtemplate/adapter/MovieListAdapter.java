@@ -62,11 +62,13 @@ public class MovieListAdapter extends BaseAdapter {
         tviTitle.setText(movie.getTitle());
 
         boolean cartelera= movie.isCartelera();
+
         if(cartelera){
             iviCartelera.setVisibility(View.VISIBLE);
         }else{
             iviCartelera.setVisibility(View.GONE);
         }
+
         /*
         if(position==0){
             tviTitle.setTextColor(Color.GREEN);

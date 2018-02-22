@@ -1,8 +1,6 @@
 package com.androidbootcamp.androidtemplate;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.Toast;
 
@@ -21,10 +19,11 @@ public class SimpleGridActivity extends BaseActivity {
 
         gridViewSimple= findViewById(R.id.gridViewSimple);
 
-        /*SimpleGridAdapter simpleGridAdapter= new SimpleGridAdapter(this,
+        SimpleGridAdapter simpleGridAdapter= new SimpleGridAdapter(this,
                 Data.movies);
+
         gridViewSimple.setAdapter(simpleGridAdapter);
-        */
+
 
         /*gridViewSimple.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

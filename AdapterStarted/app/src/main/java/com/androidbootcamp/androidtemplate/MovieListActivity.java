@@ -1,8 +1,6 @@
 package com.androidbootcamp.androidtemplate;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -29,11 +27,11 @@ public class MovieListActivity extends BaseActivity {
         movies= Movies.getMovies();
 
         //Adapter
-        /*MovieListAdapter adapter= new MovieListAdapter(this,movies);
+        MovieListAdapter adapter= new MovieListAdapter(this,movies);
 
         //set Adapter to UI
         listViewMovies.setAdapter(adapter);
-        */
+
 
         //events
         /*listViewMovies.setOnItemClickListener(new AdapterView.OnItemClickListener() {

@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //events
         textView1.setOnClickListener(this);
-        //textView2.setOnClickListener(this);
-        //textView3.setOnClickListener(this);
+        textView2.setOnClickListener(this);
+        textView3.setOnClickListener(this);
         //textView4.setOnClickListener(this);
         //textView5.setOnClickListener(this);
         //textView6.setOnClickListener(this);
