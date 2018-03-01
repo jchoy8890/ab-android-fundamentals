@@ -8,4 +8,7 @@
     <color name="colorBF">#FA9524</color>
     <color name="skye">#0090D7</color>
     <color name="white">#FFFFFF</color>
+    <color name="grey">#ccc</color>
+    <color name="black">#000</color>
+
 </resources>

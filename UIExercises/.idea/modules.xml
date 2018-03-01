@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/KotlinTemplate.iml" filepath="$PROJECT_DIR$/KotlinTemplate.iml" />
-      <module fileurl="file://$PROJECT_DIR$/UIEventsComplete.iml" filepath="$PROJECT_DIR$/UIEventsComplete.iml" />
       <module fileurl="file://$PROJECT_DIR$/UIExercises.iml" filepath="$PROJECT_DIR$/UIExercises.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

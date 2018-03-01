@@ -3,4 +3,9 @@
 
     <string name="seleccionar">Seleccionar</string>
     <string name="sign_up">Sign Up</string>
+    <string name="clearKey">Clear</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="red">Red</string>
+    <string name="black">Black</string>
 </resources>
