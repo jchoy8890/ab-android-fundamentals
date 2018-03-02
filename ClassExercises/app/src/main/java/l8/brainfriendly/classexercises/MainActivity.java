@@ -26,26 +26,34 @@ public class MainActivity extends AppCompatActivity implements MyMainAdapter.MyM
         exercisesList.add("Ejercicio 7");
         exercisesList.add("Ejercicio 8");
         MyMainAdapter myAdapter = new MyMainAdapter(exercisesList);
-        recyclerView.setAdapter(myAdapter);
         myAdapter.setListener(this);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
+
+        recyclerView.setAdapter(myAdapter);
+
+        RecyclerView.LayoutManager layoutManager
+                = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(layoutManager);
+
+
     }
 
     @Override
     public void openNextScreen(int position) {
-        switch (position){
+        switch (position) {
             case 0:
                 Intent intent = new Intent(this, Exercise1Activity.class);
                 startActivity(intent);
+                // abro mi actividad del ejercicio 1
                 break;
             case 1:
-
+                // abro mi actividad del ejercicio 2
                 break;
             case 2:
-
+                // abro mi actividad del ejercicio 3
+                break;
+            case 3:
+                // abro mi actividad del ejercicio 4
                 break;
         }
-
     }
 }

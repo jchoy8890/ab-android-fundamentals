@@ -46,8 +46,8 @@ public class MyMainAdapter extends RecyclerView.Adapter<MyMainAdapter.MyViewHold
         return exercises.size();
     }
 
-    public void setListener(MyMainAdapterInterface listener) {
-        this.listener = listener;
+    public void setListener(MyMainAdapterInterface myMainAdapterInterface){
+        listener = myMainAdapterInterface;
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder {
