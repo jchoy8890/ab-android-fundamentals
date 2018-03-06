@@ -46,7 +46,8 @@ public class MainActivity extends AppCompatActivity implements MyMainAdapter.MyM
                 // abro mi actividad del ejercicio 1
                 break;
             case 1:
-                // abro mi actividad del ejercicio 2
+                intent = new Intent(this, Exercise2Activity.class);
+                startActivity(intent);
                 break;
             case 2:
                 // abro mi actividad del ejercicio 3

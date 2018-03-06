@@ -5,8 +5,10 @@ package l8.brainfriendly.classexercises;
  */
 
 public class Ensayo {
+
     private String titulo;
     private String subtitulo;
+    private int imagen;
 
     public String getTitulo() {
         return titulo;
@@ -22,5 +24,13 @@ public class Ensayo {
 
     public void setSubtitulo(String subtitulo) {
         this.subtitulo = subtitulo;
+    }
+
+    public int getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(int imagen) {
+        this.imagen = imagen;
     }
 }
