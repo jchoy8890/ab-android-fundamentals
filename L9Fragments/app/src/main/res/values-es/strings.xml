@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">L9Fragments</string>
+
+    <string name="hello_blank_fragment">Hola Mundo</string>
+    <string name="hazme_clic">Hazme Clic!</string>
+    <string name="reusable_logic">Logica reutilable.</string>
+</resources>
