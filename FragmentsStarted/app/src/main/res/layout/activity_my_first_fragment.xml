@@ -8,6 +8,9 @@
     android:padding="20dp"
     tools:context="com.androidbootcamp.androidtemplate.MyFirstFragmentActivity">
 
+    <!--
+    https://developer.android.com/studio/write/tool-attributes.html
+    -->
     <!--<fragment
         android:id="@+id/fragment"
         android:name="com.androidbootcamp.androidtemplate.ui.fragments.MyFirstFragment"
