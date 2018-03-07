@@ -27,7 +27,9 @@ implements BlankFragmentListener {
         blankFragment= (BlankFragment) fragmentManager.findFragmentById(R.id.blankFragment);
 
         Log.v("CONSOLE", "(2) 1 Desde FragmentBasicActivity");
-        blankFragment.cambiarColorFondo();
+
+
+        //blankFragment.cambiarColorFondo();
         //blankFragment.getView().findViewById(R.id.textViewMessage)
 
         //blankFragment.ejecutarAccionDesdeFragment("Hola Fragment");
@@ -65,11 +67,11 @@ implements BlankFragmentListener {
     }
 
     //NO HACER...
-    public static void llamarAPapa(){
+    public static void callToFather(){
 
     }
 
-    public  void llamarAPapa2(){
-        Log.v("CONSOLE", "llamar a Papa 2");
+    public  void callToFather2(){
+        Log.v("CONSOLE", "call To Father 2");
     }
 }

@@ -100,18 +100,21 @@ public class BlankFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+        Log.v("CONSOLE", "1. BlankFragment");
+        Toast.makeText(getActivity(),"Hello from BlankFragment",Toast.LENGTH_LONG).show();
+
+        /*
         TextView textViewMessage=getView().findViewById(R.id.textViewMessage);
         textViewMessage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getActivity(),"Mensaje desde Fragment",Toast.LENGTH_LONG).show();
             }
-        });
+        }); */
 
-        //( (FragmentBasicActivity)(getActivity())).llamarAPapa2();
-        //FragmentBasicActivity.llamarAPapa();
 
-        /*getView().findViewById(R.id.textViewMessage).setOnClickListener(new View.OnClickListener() {
+        /*
+        getView().findViewById(R.id.textViewMessage).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getActivity(),"Mensaje desde Fragment",Toast.LENGTH_LONG).show();
@@ -124,14 +127,18 @@ public class BlankFragment extends Fragment {
                     mListener.actionActivityCambiarColor();
                 }
             }
-        });*/
+        });
 
-        //Toast.makeText(getActivity(),"Hola desde fragment ",Toast.LENGTH_LONG).show();
-        Log.v("CONSOLE", "1. BlankFragment");
+
+
         if(mListener!=null){
             Log.v("CONSOLE", "2. Enviar desde BlankFragment");
             mListener.callToActivity("Lo que sea ");
-        }
+        }*/
+    }
+
+    public void executeActionFromFragment(String message){
+        Toast.makeText(getActivity(),message,Toast.LENGTH_LONG).show();
     }
 
     public void ejecutarAccionDesdeFragment(String message){
@@ -143,20 +150,5 @@ public class BlankFragment extends Fragment {
                 "2 a BlankFragment");
         //getView().findViewById(R.id.frameLayout).setBackgroundColor(Color.GREEN);
         frameLayout.setBackgroundColor(Color.GREEN);
-    }
-
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
-    public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
     }
 }

@@ -1,7 +1,6 @@
 package com.androidbootcamp.androidtemplate.ui.fragments;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -94,10 +93,10 @@ public class BoxFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        flayBox= (FrameLayout)getView().findViewById(R.id.flayBox);
+        flayBox=getView().findViewById(R.id.flayBox);
     }
 
-    public void recibirColoryPintar(int position){
+    /*public void recibirColoryPintar(int position){
         int color=0;
         switch (position){
             case 0: //morado
@@ -111,5 +110,5 @@ public class BoxFragment extends Fragment {
                 break;
         }
         flayBox.setBackgroundColor(color);
-    }
+    }*/
 }

@@ -22,10 +22,10 @@ public class FragmentProgrammingActivity extends AppCompatActivity implements Bl
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        frameLayoutContainer= (FrameLayout) findViewById(R.id.frameLayoutContainer);
+        frameLayoutContainer=findViewById(R.id.frameLayoutContainer);
         fragmentManager= getSupportFragmentManager();
 
-        addFragment();
+        //addFragment();
     }
 
     @Override

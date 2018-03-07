@@ -1,9 +1,10 @@
 package com.androidbootcamp.androidtemplate;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 public class MyFirstFragmentActivity extends AppCompatActivity {
+//implements OnFirstFragmentListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

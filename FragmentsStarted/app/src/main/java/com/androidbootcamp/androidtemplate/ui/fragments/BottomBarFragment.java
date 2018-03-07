@@ -95,17 +95,20 @@ public class BottomBarFragment extends Fragment implements View.OnClickListener 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        btnBox0= (Button)getView().findViewById(R.id.btnBox0);
-        btnBox1= (Button)getView().findViewById(R.id.btnBox1);
-        btnBox2= (Button)getView().findViewById(R.id.btnBox2);
+        btnBox0= getView().findViewById(R.id.btnBox0);
+        btnBox1= getView().findViewById(R.id.btnBox1);
+        btnBox2= getView().findViewById(R.id.btnBox2);
 
+        /*
         btnBox0.setOnClickListener(this);
         btnBox1.setOnClickListener(this);
         btnBox2.setOnClickListener(this);
+        */
     }
 
     @Override
     public void onClick(View view) {
+        /*
         int pos=-1;
         switch (view.getId()){
             case R.id.btnBox0:
@@ -119,8 +122,9 @@ public class BottomBarFragment extends Fragment implements View.OnClickListener 
                 break;
         }
 
+
         if(pos>=0){
             mListener.seleccionarColor(pos);
-        }
+        }*/
     }
 }

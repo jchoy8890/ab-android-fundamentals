@@ -88,7 +88,7 @@ public class ShowMessageFragment extends Fragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        tviMessage= (TextView)getView().findViewById(R.id.tviMessage);
+        tviMessage= getView().findViewById(R.id.tviMessage);
         resultMessage= "";
     }
 

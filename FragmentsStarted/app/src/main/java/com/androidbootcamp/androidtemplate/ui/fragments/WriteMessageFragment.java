@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.androidbootcamp.androidtemplate.MainMessageActivity;
 import com.androidbootcamp.androidtemplate.R;
 import com.androidbootcamp.androidtemplate.ui.listeners.MessageListener;
 
@@ -111,7 +110,7 @@ public class WriteMessageFragment extends Fragment {
                 Log.v(TAG, "1 WriteMessageFragment message " + message);
                 if(mListener!=null)
                 {
-                    mListener.recibiryEnviardesdeFragment(message);
+                   // mListener.recibiryEnviardesdeFragment(message);
 
                     //( (MainMessageActivity)(getActivity())).getTwoFragment().mostrarMensaje();
                 }
@@ -126,7 +125,7 @@ public class WriteMessageFragment extends Fragment {
         public void onClick(View v) {
             message= eteMessage.getText().toString();
             Log.v(TAG, "1. message " + message);
-            ((MainMessageActivity)getActivity()).recibiryEnviarMensaje(message);
+            //((MainMessageActivity)getActivity()).recibiryEnviarMensaje(message);
         }
     };
 }

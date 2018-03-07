@@ -30,6 +30,7 @@ implements BlankFragmentListener {
         blankFragment= (BlankFragment)fragmentManager.findFragmentById(R.id.blankFragment);
 
         //blankFragment.ejecutarAccionDesdeFragment("Hola Fragment");
+        //blankFragment.executeActionFromFragment("Hello Fragment from Activity...");
     }
 
     public void otroMetodo(){}
