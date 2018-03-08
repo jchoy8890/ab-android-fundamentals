@@ -10,9 +10,9 @@ import com.androidbootcamp.androidtemplate.ui.fragments.BlankFragment;
 import com.androidbootcamp.androidtemplate.ui.listeners.BlankFragmentListener;
 
 
-public class FragmentBasicActivity extends AppCompatActivity
-implements BlankFragmentListener {
+public class FragmentBasicActivity extends AppCompatActivity implements BlankFragmentListener {
 
+    // Acceder al fragment desde codigo
     private BlankFragment blankFragment;
     private FragmentManager fragmentManager;
 

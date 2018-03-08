@@ -100,24 +100,24 @@ public class BlankFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        Log.v("CONSOLE", "1. BlankFragment");
+        /*Log.v("CONSOLE", "1. BlankFragment");
         Toast.makeText(getActivity(),"Hello from BlankFragment",Toast.LENGTH_LONG).show();
 
-        /*
+
         TextView textViewMessage=getView().findViewById(R.id.textViewMessage);
         textViewMessage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getActivity(),"Mensaje desde Fragment",Toast.LENGTH_LONG).show();
             }
-        }); */
+        });
 
 
-        /*
         getView().findViewById(R.id.textViewMessage).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getActivity(),"Mensaje desde Fragment",Toast.LENGTH_LONG).show();
+
 
                 //Enviar a la Activity
                 //((FragmentCommunicationActivity)getActivity()).otroMetodo();
@@ -128,13 +128,14 @@ public class BlankFragment extends Fragment {
                 }
             }
         });
-
+   */
 
 
         if(mListener!=null){
             Log.v("CONSOLE", "2. Enviar desde BlankFragment");
             mListener.callToActivity("Lo que sea ");
-        }*/
+            mListener.actionActivityCambiarColor();
+        }
     }
 
     public void executeActionFromFragment(String message){

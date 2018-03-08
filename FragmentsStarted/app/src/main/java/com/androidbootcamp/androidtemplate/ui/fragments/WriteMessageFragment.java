@@ -110,9 +110,9 @@ public class WriteMessageFragment extends Fragment {
                 Log.v(TAG, "1 WriteMessageFragment message " + message);
                 if(mListener!=null)
                 {
-                   // mListener.recibiryEnviardesdeFragment(message);
+                   mListener.recibiryEnviardesdeFragment(message);
 
-                    //( (MainMessageActivity)(getActivity())).getTwoFragment().mostrarMensaje();
+                  //  ( (MainMessageActivity)(getActivity())).getTwoFragment().mostrarMensaje(message);
                 }
             }
         });

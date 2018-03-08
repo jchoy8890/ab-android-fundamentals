@@ -20,16 +20,14 @@ public class ColorActivity extends AppCompatActivity implements OnColorListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_color);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         fragmentManager= getSupportFragmentManager();
-
         bottomBarFragment= (BottomBarFragment) fragmentManager.findFragmentById(R.id.fragBottom);
         boxFragment= (BoxFragment) fragmentManager.findFragmentById(R.id.fragBox);
     }
 
     @Override
     public void seleccionarColor(int pos) {
-       // boxFragment.recibirColoryPintar(pos);
+       boxFragment.recibirColoryPintar(pos);
     }
 
 

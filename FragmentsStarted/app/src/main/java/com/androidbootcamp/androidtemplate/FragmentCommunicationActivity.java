@@ -28,7 +28,7 @@ implements BlankFragmentListener {
 
         fragmentManager= getSupportFragmentManager();
         blankFragment= (BlankFragment)fragmentManager.findFragmentById(R.id.blankFragment);
-
+        blankFragment.cambiarColorFondo();
         //blankFragment.ejecutarAccionDesdeFragment("Hola Fragment");
         //blankFragment.executeActionFromFragment("Hello Fragment from Activity...");
     }
@@ -48,7 +48,7 @@ implements BlankFragmentListener {
 
     @Override
     public void callToActivity(Object object) {
-
+        Toast.makeText(this, String.valueOf(object), Toast.LENGTH_LONG * 5).show();
     }
 
     @Override

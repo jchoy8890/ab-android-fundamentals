@@ -25,7 +25,7 @@ public class FragmentProgrammingActivity extends AppCompatActivity implements Bl
         frameLayoutContainer=findViewById(R.id.frameLayoutContainer);
         fragmentManager= getSupportFragmentManager();
 
-        //addFragment();
+        addFragment();
     }
 
     @Override
@@ -40,6 +40,7 @@ public class FragmentProgrammingActivity extends AppCompatActivity implements Bl
 
     @Override
     public void callToActivity(Object object) {
+
 
     }
 
